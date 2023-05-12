@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Project</title>
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(45deg, #f9dbdb 25%, transparent 25%, transparent 50%, #f9dbdb 50%, #f9dbdb 75%, transparent 75%, transparent);
+        background-size: 50px 50px;
+        animation: backgroundAnimation 5s linear infinite;
+    }
+        @keyframes backgroundAnimation {
+        100% {
+        background-position: 100px 0;
+    }
+}
+
+    .container {
+        text-align: center;
+        border: 5px solid black;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        animation: bgAnimation 5s ease infinite;
+    }
+    @keyframes bgAnimation {
+        0% {
+        background-color: #301008;
+    }
+        25% {
+        background-color: #89311b;
+    }
+        50% {
+        background-color: #120401;
+    }
+        75% {
+        background-color: #622314;
+    }
+        100% {
+        background-color: #301008;
+    }
+}
+
+    h1 {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+  
+    p {
+        color: #555;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>It's a <%= kindOfDay %></h1>
+        <h1>and Date is <%= kindOfDate %> <%= kindOfMonth %></h1>
+    </div>
+</body>
+</html>
